@@ -2,7 +2,10 @@ module github.com/mengelbart/quic-go-random-transfer-example
 
 go 1.22.5
 
-require github.com/quic-go/quic-go v0.45.1
+require (
+	github.com/quic-go/quic-go v0.45.1
+	golang.org/x/sync v0.7.0
+)
 
 require (
 	github.com/francoispqt/gojay v1.2.13 // indirect
@@ -17,3 +20,5 @@ require (
 	golang.org/x/sys v0.20.0 // indirect
 	golang.org/x/tools v0.21.0 // indirect
 )
+
+replace github.com/quic-go/quic-go v0.45.1 => github.com/mengelbart/quic-go v0.7.1-0.20240731153658-ef9a3961e1b5
